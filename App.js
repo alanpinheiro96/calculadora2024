@@ -1,33 +1,34 @@
 import { StyleSheet, Text, View } from 'react-native';
 import Botao from './components/Botao';
+import Visor from './components/Visor';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      
+      <Visor />
       <View style={styles.botoes}>
 
-        <Botao label={"AC"} triplo/>
-        <Botao label={"/"} operacao/>
+        <Botao label={"AC"} triplo />
+        <Botao label={"/"} operacao />
 
-        <Botao label={"7"}/>
-        <Botao label={"8"}/>
-        <Botao label={"9"}/>
-        <Botao label={"*"}operacao/>
-       
-        <Botao label={"4"}/>
-        <Botao label={"5"}/>
-        <Botao label={"6"}/>
-        <Botao label={"-"} operacao/>
-        
-        <Botao label={"1"}/>
-        <Botao label={"2"}/>
-        <Botao label={"3"}/>
-        <Botao label={"+"} operacao/>
+        <Botao label={"7"} />
+        <Botao label={"8"} />
+        <Botao label={"9"} />
+        <Botao label={"*"} operacao />
 
-        <Botao label={"0"} duplo/>
-        <Botao label={"."}/>
-        <Botao label={"="} operacao/>
+        <Botao label={"4"} />
+        <Botao label={"5"} />
+        <Botao label={"6"} />
+        <Botao label={"-"} operacao />
+
+        <Botao label={"1"} />
+        <Botao label={"2"} />
+        <Botao label={"3"} />
+        <Botao label={"+"} operacao />
+
+        <Botao label={"0"} duplo />
+        <Botao label={"."} />
+        <Botao label={"="} operacao />
       </View>
 
     </View>
@@ -44,5 +45,5 @@ const styles = StyleSheet.create({
   botoes: {
     flexDirection: 'row',
     flexWrap: 'wrap'
-}
+  }
 });
